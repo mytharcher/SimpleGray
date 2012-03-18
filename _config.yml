@@ -1,0 +1,29 @@
+markdown: kramdown
+pygments: true
+safe: false
+permalink: /posts/:title.html
+exclude:
+  - README.md
+
+host: mytharcher.github.com
+
+custom:
+    category:
+        thinking: 闭门思考
+        problems: 问题记录
+    categories:
+      - name:  thinking
+        title: 闭门思考
+
+      - name:  problems
+        title: 问题记录
+
+meta:
+    authors:
+      - name: mytharcher
+        email: mytharcher@gmail.com
+        gravatar: 1cd8c12591616d8c22aaa624f8c07834
+
+    gravatar:
+        base: http://www.gravatar.com/avatar/
+        param: ?s=
