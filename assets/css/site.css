@@ -1,8 +1,9 @@
 *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
 html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,form,dl,dt,dd,figure{margin:0; padding:0; border:0;}
-body{min-width:960px; line-height:1.6em; font-family:Helvetica, Arial, sans-serif; color:#555;}
+body{line-height:1.6em; font-family:Helvetica, Arial, sans-serif; color:#555;}
 a{margin:0 2px; color:#06c; text-decoration:none;}
-a[target=_blank]{padding-right:14px; background:url(http://elfjs.com/assets/css/img/external.png) no-repeat right;}
+a[href^="http"]{display:inline-block; margin-right:4px; padding-right:14px; background:url(http://elfjs.com/assets/css/img/external.png) no-repeat right;}
+a[href^="http://mytharcher.github.com"]{padding-right:0; background:none;}
 a:hover{text-decoration:underline;}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{margin:0;}
 img{border:0;}
@@ -12,13 +13,13 @@ header{font-size:80%;}
 header h1 .minor{color:#999; font-weight:normal;}
 header .additional{font-size:90%; color:#ccc;}
 
-.main{width:62%; padding:2em 3em;}
+.main{position:relative; zoom:1; width:62%; padding:2em 3em;}
 side{position:fixed; left:62%; top:0; right:0; height:100%; overflow:hidden; padding:2em 3em; background:#eee; box-shadow:5px 0 5px rgba(0,0,0,.1) inset; font-size:75%;}
 side h2{margin:1em 0;}
 side .feed-link{margin-left:0.5em;}
 side .block{max-width:240px; margin:1.5em 0;}
 side .block-about{line-height:normal;}
-side .block-about p{margin:0.5em 0;}
+side .block-about p{margin:0.5em 0; color:#999;}
 side .block-about figure img{margin:0.5em 0; border-radius:2px;}
 side nav ul{list-style:none; line-height:1.5em;}
 
@@ -59,7 +60,7 @@ article td{background:#fff;}
 article table a{margin:0;}
 article blockquote{line-height:1.6em; margin:1em 0 1em 1.5em; border-left:2px solid #eee; padding-left:1em; font-size:90%;}
 
-article .meta{line-height:1.6em; font-size:75%; margin:0.5em 0 2em 0; color:#999;}
+article .meta{line-height:1.6em; font-size:80%; margin:0.5em 0 2em 0; color:#999;}
 article .meta:last-child{margin-bottom:0;}
 
 #disqus_thread.comments{clear:both; margin:3em 0;}
