@@ -1,0 +1,29 @@
+markdown: kramdown
+pygments: true
+safe: false
+permalink: /posts/:title.html
+exclude:
+  - README.md
+
+name: Your Site Name
+host: yourdomain.com
+
+custom:
+    category:
+        default: Default Category
+        another: Another Category
+    categories:
+      - name:  default
+        title: Default Category
+
+      - name:  another
+        title: Another Category
+
+meta:
+    author:
+        name: Your Name
+        email: your-email@example.com
+        gravatar: 1cd8c12591616d8c22aaa624f8c07834
+        github: your-github-account
+
+    gravatar: http://en.gravatar.com/avatar/
