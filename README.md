@@ -62,9 +62,9 @@ Jekyll主题: SimpleGray
 
 	把这段JS引用地址改成你在Disqus上的评论JS地址，那么每一篇日志后就会显示评论列表了，但这个功能只有在真实线上域名的时候才会生效。
 
-0.	修改[Google Custom Search][]安装代码
+0.	**站内搜索**
 
-	如果你需要站内搜索功能，那么最好的办法就是申请Google Custom Search(CSE)服务。
+	如果你需要站内搜索功能，那么最好的办法就是申请[Google Custom Search][](CSE)服务。
 
 	主题中已经配置了作者站点的站内搜索为默认引擎，具体代码在`assets/js/site.js`里22行附近：
 
@@ -72,7 +72,7 @@ Jekyll主题: SimpleGray
 
 	将其中引擎用户ID字符串改为你自己的就可以了，很简单吧！
 
-0.	安装[Google Analyse][]或其他站点统计代码
+0.	安装[Google Analytics][]或其他站点统计代码
 	
 	主题作者对访问量不是很敏感，所以没有安装统计代码。如果需要安装，可以在`_layout/page.tpl`文件中加入统计代码，之后每个生成的页面就都可以被统计到了。
 
@@ -90,6 +90,7 @@ Jekyll主题: SimpleGray
 * [找寻模式](http://topman.github.com/)
 * [开涕小站](http://maojs.com/)
 
+[Disqus]: http://www.disqus.com/
 [Google Analytics]: http://www.google.com/analytics/
 [Google Custom Search]: http://www.google.com/cse/
 [Gravatar]: http://gravatar.com/
