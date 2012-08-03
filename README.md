@@ -89,6 +89,8 @@ Jekyll主题: SimpleGray
 * [Sfoolish's Blog](http://blog.shadingnet.com/)
 * [找寻模式](http://topman.github.com/)
 * [开涕小站](http://maojs.com/)
+* [小艳](http://lxyhust.com/)
+* [codeserf](http://believe3301.github.com/)
 
 [Disqus]: http://www.disqus.com/
 [Google Analytics]: http://www.google.com/analytics/
