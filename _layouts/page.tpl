@@ -72,16 +72,23 @@
 	</div>
 </side>
 
-<script src="http://elfjs.googlecode.com/files/elf-0.3.3-min.js"></script>
-<script src="/assets/js/site.js"></script>
+<script src="http://elfjs.googlecode.com/files/elf-0.4.0-min.js"></script>
 <script src="/assets/js/highlight.js"></script>
 <script src="/assets/js/hljs/languages/css.js"></script>
 <script src="/assets/js/hljs/languages/xml.js"></script>
 <script src="/assets/js/hljs/languages/javascript.js"></script>
 <script src="/assets/js/hljs/languages/php.js"></script>
 <script src="/assets/js/hljs/languages/ruby.js"></script>
+
+<script src="/assets/js/site.js"></script>
 {% for script in page.scripts %}<script src="{{ script }}"></script>
 {% endfor %}
+<script>
+site.Urls.GOOGLE_API = '{{site.meta.gapi}}';
+site.Urls.DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta.author.disqus }}.{{ site.meta.disqus }}' : '';
 
+site.Vars.SITE_NAME = '{{ site.name }}';
+site.Vars.GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
+</script>
 </body>
 </html>

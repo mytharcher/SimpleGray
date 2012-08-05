@@ -3,9 +3,6 @@ layout: page
 
 pageClass: page-type-post
 
-scripts:
-  - http://yoursite.disqus.com/embed.js
-
 ---
 
 <div class="trace">/ <a href="/">{{ site.name }}</a> / {{ page.title }}</div>

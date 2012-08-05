@@ -12,14 +12,20 @@ var site = {
 			elf('#List>.article>h2').on('click', site.Handlers.loadArticle);
 		},
 		
+		post: function () {
+			var disqusUrl = site.Urls.DISCUS_COMMENT;
+			disqusUrl && elf().loadScript(disqusUrl, {});
+		},
+		
 		search: function () {
-			elf.dom.Stage.loadScript('http://www.google.com/jsapi', {
-				onLoad: function () {
+			var googleCseId = site.Vars.GOOGLE_CUSTOM_SEARCH_ID;
+			googleCseId && elf().loadScript(site.Urls.GOOGLE_API, {
+				onload: function () {
 					google.load('search', '1', {
 						language: 'zh-CN',
 						style: google.loader.themes.V2_DEFAULT,
 						callback: function() {
-							var customSearchControl = new google.search.CustomSearchControl('000346898720731947188:13h55x32l0y', {});
+							var customSearchControl = new google.search.CustomSearchControl(googleCseId, {});
 							customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 							
 							var options = new google.search.DrawOptions();
@@ -30,14 +36,18 @@ var site = {
 							var query = url.getParameter('q');
 							if (query) {
 								query = decodeURIComponent(query);
-								document.title = elf().template(site.Text.TPL_SEARCH_TITLE, query);
+								document.title = elf().template(
+									site.Text.TPL_SEARCH_TITLE,
+									site.Vars.SITE_NAME,
+									query
+								);
 								customSearchControl.execute(query);
 							}
 						}
 					});
 				}
 			});
-		},
+		}
 	},
 	
 	Handlers: {
@@ -63,8 +73,12 @@ var site = {
 	},
 	
 	Text: {
-		TPL_SEARCH_TITLE: '造轮子工程师 / 搜索：#{0}'
-	}
+		TPL_SEARCH_TITLE: '#{0} / 搜索：#{1}'
+	},
+	
+	Vars: {},
+	
+	Urls: {}
 };
 
 

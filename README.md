@@ -49,36 +49,38 @@ Jekyll主题: SimpleGray
 
 	PS: 页面右侧作者信息块中有个隐藏的作者邮件地址，为了防止被爬虫抓取，我把邮件地址写在了`assets/css/site.css`里，打开看看，你能找到！
 
-0.	**修改CNAME**
-
-	按照jekyll官方的说明，使用你自己的域名替换`CNAME`文件中的内容，如果有多个别名，每行一个。
-
-0.	修改[Disqus][]云评论代码
+0.	**[Disqus][]云评论代码**
 	
-	打开`_layout/post.tpl`，看到YAML的头信息配置部分：
-
-		scripts:
-		  - http://yoursite.disqus.com/embed.js
-
-	把这段JS引用地址改成你在Disqus上的评论JS地址，那么每一篇日志后就会显示评论列表了，但这个功能只有在真实线上域名的时候才会生效。
+	`_config.yml`的`author`配置部分也有`disqus`一项，配置为你创建的站点短名称标识串即可。之后每一篇日志后就会显示评论列表了，但这个功能只有在真实线上域名的时候才会生效。
 
 0.	**站内搜索**
 
 	如果你需要站内搜索功能，那么最好的办法就是申请[Google Custom Search][](CSE)服务。
 
-	主题中已经配置了作者站点的站内搜索为默认引擎，具体代码在`assets/js/site.js`里22行附近：
-
-		var customSearchControl = new google.search.CustomSearchControl('000346898720731947188:13h55x32l0y', {});
-
-	将其中引擎用户ID字符串改为你自己的就可以了，很简单吧！
+	主题中已经配置了作者站点的站内搜索为默认引擎，具体设置也在`_config.yml`中的`author`部分，`gcse`字段。将其中引擎用户ID字符串改为你自己的即可。
 
 0.	安装[Google Analytics][]或其他站点统计代码
 	
 	主题作者对访问量不是很敏感，所以没有安装统计代码。如果需要安装，可以在`_layout/page.tpl`文件中加入统计代码，之后每个生成的页面就都可以被统计到了。
 
+0.	**修改CNAME**
+
+	按照jekyll官方的说明，使用你自己的域名替换`CNAME`文件中的内容，如果有多个别名，每行一个。
+
 ### 更多扩展功能
 
-自己摸索吧，代码就那么点，都很简单的，哥实在懒得写了。
+0.	**JavaScript相关**
+
+	这个主题使用了作者[造轮子工程师][]开发的[elf+js][]，这是一个和jQuery一样简单的JS基础库，详细的请点击链接进入官网了解。
+	
+	全站相关的JS都在`assets/js/site.js`一个文件里，不大，提供了几个功能：
+	
+		* 代码高亮初始化
+		* Disqus评论初始化
+		* 站内搜索初始化
+		* 列表页点击标题空白部分加载文章内容
+
+其他自己摸索吧，代码就那么点，都很简单的，哥实在懒得写了。
 
 ## 基于此主题的站点
 
@@ -93,6 +95,7 @@ Jekyll主题: SimpleGray
 * [codeserf](http://believe3301.github.com/)
 
 [Disqus]: http://www.disqus.com/
+[elf+js]: http://elfjs.com/
 [Google Analytics]: http://www.google.com/analytics/
 [Google Custom Search]: http://www.google.com/cse/
 [Gravatar]: http://gravatar.com/
