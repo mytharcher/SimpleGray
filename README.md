@@ -93,6 +93,7 @@ Jekyll主题: SimpleGray
 * [开涕小站](http://maojs.com/)
 * [小艳](http://lxyhust.com/)
 * [codeserf](http://believe3301.github.com/)
+* [指尖](http://hueidou.github.com)
 * [闲敲棋子](http://dylanvivi.github.com/)
 
 [Disqus]: http://www.disqus.com/
