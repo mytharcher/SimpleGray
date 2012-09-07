@@ -75,10 +75,10 @@ Jekyll主题: SimpleGray
 	
 	全站相关的JS都在`assets/js/site.js`一个文件里，不大，提供了几个功能：
 	
-	* 代码高亮初始化
-	* Disqus评论初始化
-	* 站内搜索初始化
-	* 列表页点击标题空白部分加载文章内容
+		* 代码高亮初始化
+		* Disqus评论初始化
+		* 站内搜索初始化
+		* 列表页点击标题空白部分加载文章内容
 
 其他自己摸索吧，代码就那么点，都很简单的，哥实在懒得写了。
 
@@ -93,6 +93,7 @@ Jekyll主题: SimpleGray
 * [开涕小站](http://maojs.com/)
 * [小艳](http://lxyhust.com/)
 * [codeserf](http://believe3301.github.com/)
+* [闲敲棋子](http://dylanvivi.github.com/)
 
 [Disqus]: http://www.disqus.com/
 [elf+js]: http://elfjs.com/
