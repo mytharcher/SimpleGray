@@ -3,12 +3,9 @@ layout: page
 
 pageClass: page-type-post
 
-scripts:
-  - http://tech-justlog-me.disqus.com/embed.js
-
 ---
 
-<div class="trace">/ <a href="/">闭门造轮子</a> / {{ page.title }}</div>
+<div class="trace">/ <a href="/">{{ site.name }}</a> / {{ page.title }}</div>
 
 <article>
 	<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>

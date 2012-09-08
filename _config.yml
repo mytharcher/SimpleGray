@@ -5,25 +5,29 @@ permalink: /posts/:title.html
 exclude:
   - README.md
 
-host: mytharcher.github.com
+name: Your Site Name
+host: yourdomain.com
 
 custom:
     category:
-        thinking: 闭门思考
-        problems: 问题记录
+        default: Default Category
+        another: Another Category
     categories:
-      - name:  thinking
-        title: 闭门思考
+      - name:  default
+        title: Default Category
 
-      - name:  problems
-        title: 问题记录
+      - name:  another
+        title: Another Category
 
 meta:
-    authors:
-      - name: mytharcher
-        email: mytharcher@gmail.com
-        gravatar: 1cd8c12591616d8c22aaa624f8c07834
+    author:
+        name: Your Name
+        email: your-email@example.com
+        disqus: your-disqus-short-name              # Disqus缩略标识
+        gcse: 000346898720731947188:13h55x32l0y     # Google自定义搜索标识ID
+        github: your-github-account                 # GitHub账号
+        gravatar: 1cd8c12591616d8c22aaa624f8c07834  # Gravatar头像标识
 
-    gravatar:
-        base: http://www.gravatar.com/avatar/
-        param: ?s=
+    disqus: disqus.com/embed.js                     # Disqus评论的JS地址
+    gapi: http://www.google.com/jsapi               # Google API地址
+    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
