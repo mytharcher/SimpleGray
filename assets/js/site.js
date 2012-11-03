@@ -9,7 +9,7 @@
 var site = {
 	InitMap: {
 		list: function () {
-			elf('#List>.article>h2').on('click', site.Handlers.loadArticle);
+			elf('article>h2').on('click', site.Handlers.loadArticle);
 		},
 		
 		post: function () {
@@ -30,7 +30,7 @@ var site = {
 		loadArticle: function (ev) {
 			var target = ev.target,
 				item = elf(target).parent();
-			if (target.nodeName != 'A' && item.attr('data-loaded') != 1) {
+			if (target.nodeName != 'A' && item.attr('content-loaded') != 1) {
 				elf().ajax({
 					url: target.firstChild.getAttribute('href'),
 					onsuccess: site.Handlers.showAjaxContent.bind(item)
@@ -40,11 +40,11 @@ var site = {
 		},
 		
 		showAjaxContent: function (response) {
-			var content = response.split('<p class="article-meta">')[1].split('</p>');
+			var content = response.split('<p class="meta">')[1].split('</p>');
 			content.shift();
 			content = content.join('</p>').split(/<\/div>\s*<div id="disqus_thread" class="doc-comments">/)[0];
-			this.query('>div.article').html(content);
-			this.attr('data-loaded', 1);
+			this.query('>.article-content').html(content);
+			this.attr('content-loaded', 1);
 		},
 		
 		onGCSEAPILoad: function () {

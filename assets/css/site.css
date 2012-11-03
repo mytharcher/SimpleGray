@@ -33,7 +33,10 @@ footer p{color:#aaa; font-size:75%; line-height:1.6em;}
 .page-type-post article>h1:first-child{margin-bottom:0;}
 .page-type-post article .permalink{font:italic 85%/1.6em Arial, Helvetica, sans-serif; color:#999;}
 
-.page-type-list article h2{margin-bottom:0;}
+.page-type-list article h2{margin-bottom:0; cursor: pointer;}
+.page-type-list article h2:hover{background: #eee;}
+.page-type-list article[content-loaded] h2{cursor: default;}
+.page-type-list article[content-loaded] h2:hover{background:none;}
 
 .trace{font-size:80%; color:#999;}
 
