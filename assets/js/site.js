@@ -18,34 +18,10 @@ var site = {
 		},
 		
 		search: function () {
-			var googleCseId = site.Vars.GOOGLE_CUSTOM_SEARCH_ID;
-			googleCseId && elf().loadScript(site.Urls.GOOGLE_API, {
-				onload: function () {
-					google.load('search', '1', {
-						language: 'zh-CN',
-						style: google.loader.themes.V2_DEFAULT,
-						callback: function() {
-							var customSearchControl = new google.search.CustomSearchControl(googleCseId, {});
-							customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-							
-							var options = new google.search.DrawOptions();
-							options.setAutoComplete(true);
-							customSearchControl.draw('cse', options);
-							
-							var url = new elf.URL(location);
-							var query = url.getParameter('q');
-							if (query) {
-								query = decodeURIComponent(query);
-								document.title = elf().template(
-									site.Text.TPL_SEARCH_TITLE,
-									site.Vars.SITE_NAME,
-									query
-								);
-								customSearchControl.execute(query);
-							}
-						}
-					});
-				}
+			site.Urls.GOOGLE_API &&
+			site.Vars.GOOGLE_CUSTOM_SEARCH_ID &&
+			elf().loadScript(site.Urls.GOOGLE_API, {
+				onload: site.Handlers.onGCSEAPILoad
 			});
 		}
 	},
@@ -69,6 +45,35 @@ var site = {
 			content = content.join('</p>').split(/<\/div>\s*<div id="disqus_thread" class="doc-comments">/)[0];
 			this.query('>div.article').html(content);
 			this.attr('data-loaded', 1);
+		},
+		
+		onGCSEAPILoad: function () {
+			google.load('search', '1', {
+				language: 'zh-CN',
+				style: google.loader.themes.V2_DEFAULT,
+				callback: site.Handlers.onGCSEReady
+			});
+		},
+		
+		onGCSEReady: function() {
+			var customSearchControl = new google.search.CustomSearchControl(site.Vars.GOOGLE_CUSTOM_SEARCH_ID, {});
+			customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+			
+			var options = new google.search.DrawOptions();
+			options.setAutoComplete(true);
+			customSearchControl.draw('cse', options);
+			
+			var url = new elf.URL(location);
+			var query = url.getParameter('q');
+			if (query) {
+				query = decodeURIComponent(query);
+				document.title = elf().template(
+					site.Text.TPL_SEARCH_TITLE,
+					site.Vars.SITE_NAME,
+					query
+				);
+				customSearchControl.execute(query);
+			}
 		}
 	},
 	
