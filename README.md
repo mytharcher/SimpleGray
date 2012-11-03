@@ -96,6 +96,7 @@ Jekyll主题: SimpleGray
 * [指尖](http://hueidou.github.com)
 * [闲敲棋子](http://dylanvivi.github.com/)
 * [Yan Hua's 365 Days](http://yanhua365.org/)
+* [笔记本](http://kenchowcn.info/)
 
 [Disqus]: http://www.disqus.com/
 [elf+js]: http://elfjs.com/
