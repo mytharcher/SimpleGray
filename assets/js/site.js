@@ -13,14 +13,14 @@ var site = {
 		},
 		
 		post: function () {
-			var disqusUrl = site.Urls.DISCUS_COMMENT;
+			var disqusUrl = site.URL_DISCUS_COMMENT;
 			disqusUrl && elf().loadScript(disqusUrl, {});
 		},
 		
 		search: function () {
-			site.Urls.GOOGLE_API &&
-			site.Vars.GOOGLE_CUSTOM_SEARCH_ID &&
-			elf().loadScript(site.Urls.GOOGLE_API, {
+			site.URL_GOOGLE_API &&
+			site.VAR_GOOGLE_CUSTOM_SEARCH_ID &&
+			elf().loadScript(site.URL_GOOGLE_API, {
 				onload: site.Handlers.onGCSEAPILoad
 			});
 		}
@@ -56,7 +56,7 @@ var site = {
 		},
 		
 		onGCSEReady: function() {
-			var customSearchControl = new google.search.CustomSearchControl(site.Vars.GOOGLE_CUSTOM_SEARCH_ID, {});
+			var customSearchControl = new google.search.CustomSearchControl(site.VAR_GOOGLE_CUSTOM_SEARCH_ID, {});
 			customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 			
 			var options = new google.search.DrawOptions();
@@ -68,22 +68,14 @@ var site = {
 			if (query) {
 				query = decodeURIComponent(query);
 				document.title = elf().template(
-					site.Text.TPL_SEARCH_TITLE,
-					site.Vars.SITE_NAME,
+					site.TPL_SEARCH_TITLE,
+					site.VAR_SITE_NAME,
 					query
 				);
 				customSearchControl.execute(query);
 			}
 		}
-	},
-	
-	Text: {
-		TPL_SEARCH_TITLE: '#{0} / 搜索：#{1}'
-	},
-	
-	Vars: {},
-	
-	Urls: {}
+	}
 };
 
 

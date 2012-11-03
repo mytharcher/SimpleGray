@@ -84,11 +84,12 @@
 {% for script in page.scripts %}<script src="{{ script }}"></script>
 {% endfor %}
 <script>
-site.Urls.GOOGLE_API = '{{site.meta.gapi}}';
-site.Urls.DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta.author.disqus }}.{{ site.meta.disqus }}' : '';
+site.URL_GOOGLE_API = '{{site.meta.gapi}}';
+site.URL_DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta.author.disqus }}.{{ site.meta.disqus }}' : '';
 
-site.Vars.SITE_NAME = '{{ site.name }}';
-site.Vars.GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
+site.VAR_SITE_NAME = '{{ site.name }}';
+site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
+site.TPL_SEARCH_TITLE = '#{0} / 搜索：#{1}';
 </script>
 </body>
 </html>
