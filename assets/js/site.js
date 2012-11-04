@@ -42,7 +42,7 @@ var site = {
 		showAjaxContent: function (response) {
 			var content = response.split('<p class="meta">')[1].split('</p>');
 			content.shift();
-			content = content.join('</p>').split(/<\/div>\s*<div id="disqus_thread" class="doc-comments">/)[0];
+			content = content.join('</p>').split(/<\/article>\s*<div id="disqus_thread" class="doc-comments">/)[0];
 			this.query('>.article-content').html(content);
 			this.attr('content-loaded', 1);
 		},
