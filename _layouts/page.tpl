@@ -73,12 +73,7 @@
 </side>
 
 <script src="http://elfjs.googlecode.com/files/elf-0.4.0-min.js"></script>
-<script src="/assets/js/highlight.js"></script>
-<script src="/assets/js/hljs/languages/css.js"></script>
-<script src="/assets/js/hljs/languages/xml.js"></script>
-<script src="/assets/js/hljs/languages/javascript.js"></script>
-<script src="/assets/js/hljs/languages/php.js"></script>
-<script src="/assets/js/hljs/languages/ruby.js"></script>
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 
 <script src="/assets/js/site.js"></script>
 {% for script in page.scripts %}<script src="{{ script }}"></script>
