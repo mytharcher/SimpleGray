@@ -22,7 +22,7 @@
 	</footer>
 </div>
 
-<side>
+<aside>
 	<h2><a href="/">{{ site.name }}</a><a href="/feed.xml" class="feed-link" title="Subscribe"><img src="http://blog.rexsong.com/wp-content/themes/rexsong/icon_feed.gif" alt="RSS feed" /></a></h2>
 	
 	<nav class="block">
@@ -70,7 +70,7 @@
 			<a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a>
 		</p>
 	</div>
-</side>
+</aside>
 
 <script src="http://elfjs.googlecode.com/files/elf-0.4.0-min.js"></script>
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
