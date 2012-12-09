@@ -97,6 +97,7 @@ Jekyll主题: SimpleGray
 * [闲敲棋子](http://dylanvivi.github.com/)
 * [Yan Hua's 365 Days](http://yanhua365.org/)
 * [笔记本](http://kenchowcn.info/)
+* [13key](http://13key.info/)
 
 [Disqus]: http://www.disqus.com/
 [elf+js]: http://elfjs.com/
@@ -104,3 +105,4 @@ Jekyll主题: SimpleGray
 [Google Custom Search]: http://www.google.com/cse/
 [Gravatar]: http://gravatar.com/
 [造轮子工程师]: https://github.com/mytharcher
+
