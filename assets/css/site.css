@@ -67,6 +67,11 @@ article blockquote{line-height:1.6em; margin:1em 0 1em 1.5em; border-left:2px so
 article .meta{line-height:1.6em; font-size:80%; margin:0.5em 0 2em 0; color:#999;}
 article .meta:last-child{margin-bottom:0;}
 article .gist .gist-file .gist-meta{padding:0 .5em;}
+article .gist,
+article .gist pre{line-height: normal;}
+article .gist th,
+article .gist td{font-size: 100%;}
+article .gist .line_numbers{font-size: 85%;}
 
 #disqus_thread{clear:both; margin:3em 0; font-size:80%;}
 #disqus_thread a{padding-right:0; background:none;}
