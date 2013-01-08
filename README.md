@@ -98,6 +98,7 @@ Jekyll主题: SimpleGray
 * [Yan Hua's 365 Days](http://yanhua365.org/)
 * [笔记本](http://kenchowcn.info/)
 * [13key](http://13key.info/)
+* [铃儿响叮当](http://binli.github.com/)
 
 [Disqus]: http://www.disqus.com/
 [elf+js]: http://elfjs.com/
