@@ -84,21 +84,7 @@ Jekyll主题: SimpleGray
 
 ## 基于此主题的站点
 
-如果你也使用了这个主题，可以在下面的列表里添加你的站点链接。
-
-* [闭门造轮子](http://mytharcher.github.com) （主题作者）
-* [nomospace](http://nomospace.github.com/)
-* [Sfoolish's Blog](http://blog.shadingnet.com/)
-* [找寻模式](http://topman.github.com/)
-* [开涕小站](http://maojs.com/)
-* [小艳](http://lxyhust.com/)
-* [codeserf](http://believe3301.github.com/)
-* [指尖](http://hueidou.github.com)
-* [闲敲棋子](http://dylanvivi.github.com/)
-* [Yan Hua's 365 Days](http://yanhua365.org/)
-* [笔记本](http://kenchowcn.info/)
-* [13key](http://13key.info/)
-* [铃儿响叮当](http://binli.github.com/)
+如果你也使用了这个主题，可以项目[wiki](https://github.com/mytharcher/SimplyGray/wiki)里添加你的站点链接。
 
 [Disqus]: http://www.disqus.com/
 [elf+js]: http://elfjs.com/
