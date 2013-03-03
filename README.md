@@ -78,13 +78,13 @@ Jekyll主题: SimpleGray
 	* 代码高亮初始化
 	* Disqus评论初始化
 	* 站内搜索初始化
-	* 列表页点击标题空白部分加载文章内容
+	* 滚动页面时自动延迟加载对应在显示区域内的文章
 
 其他自己摸索吧，代码就那么点，都很简单的，哥实在懒得写了。
 
 ## 基于此主题的站点
 
-如果你也使用了这个主题，可以项目[wiki](https://github.com/mytharcher/SimplyGray/wiki)里添加你的站点链接。
+如果你也使用了这个主题，可以项目[wiki](https://github.com/mytharcher/SimpleGray/wiki)里添加你的站点链接。
 
 [Disqus]: http://www.disqus.com/
 [elf+js]: http://elfjs.com/
