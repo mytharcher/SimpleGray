@@ -7,19 +7,49 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{margin:0;}
 img{border:0;}
 input,textarea{resize:none;}
 
+@media screen and (min-width:1024px) {
+	.main{
+		position:relative; zoom:1;
+		width:62%;
+		padding:2em 3em;
+	}
+	aside{
+		position:fixed;
+		left:62%;
+		top:0;
+		right:0;
+		height:100%;
+		overflow:hidden;
+		padding:2em 3em;
+		box-shadow:5px 0 5px rgba(0,0,0,.1) inset;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.main{
+		padding: 1em;
+	}
+	aside{
+		padding: 1em;
+	}
+	
+	aside .block-about figure{
+		float: left;
+	}
+}
+
 header{font-size:80%;}
 header h1 .minor{color:#999; font-weight:normal;}
 header .additional{font-size:90%; color:#ccc;}
 
-.main{position:relative; zoom:1; width:62%; padding:2em 3em;}
-aside{position:fixed; left:62%; top:0; right:0; height:100%; overflow:hidden; padding:2em 3em; background:#eee; box-shadow:5px 0 5px rgba(0,0,0,.1) inset; font-size:75%;}
+aside{background:#eee; font-size:75%;}
 aside h2{margin:1em 0;}
 aside .feed-link{margin-left:0.5em;}
 aside nav ul{list-style:none; line-height:1.5em;}
 aside nav li:before{content:"> "; font:normal 80%/1em "宋体"; margin:0 .3em; color: #999;}
 aside .block{max-width:300px; margin:1.5em 0; line-height:1.5em;}
 aside .block h3{margin:.5em 0;}
-aside .block a{margin:0px;}
+aside .block a{margin:0;}
 aside .block-about p{margin:0.5em 0; color:#999;}
 aside .block-about figure img{border-radius:2px;}
 aside .block-about figcaption{margin:0.2em 0;}
@@ -72,6 +102,7 @@ article .gist pre{line-height: normal;}
 article .gist th,
 article .gist td{font-size: 100%;}
 article .gist .line_numbers{font-size: 85%;}
+article .gist .line-data{min-width: 100%;}
 
 #disqus_thread{clear:both; margin:3em 0; font-size:80%;}
 #disqus_thread a{padding-right:0; background:none;}
