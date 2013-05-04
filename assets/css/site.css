@@ -32,10 +32,6 @@ input,textarea{resize:none;}
 	aside{
 		padding: 1em;
 	}
-	
-	aside .block-about figure{
-		float: left;
-	}
 }
 
 header{font-size:80%;}
