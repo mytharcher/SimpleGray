@@ -9,7 +9,7 @@
 var site = {
 	InitMap: {
 		list: function () {
-			elf(window).on('scroll', site.Handlers.scrolling);
+			site.VAR_AUTO_LOAD_ON_SCROLL && elf(window).on('scroll', site.Handlers.scrolling);
 		},
 		
 		post: function () {
@@ -32,7 +32,7 @@ var site = {
 				.filter(site.Util.isViewable)
 				.filter(function (item) {
 					return item.getAttribute('content-loaded') != 1;
-				}).slice(0, 2).forEach(site.Handlers.loadArticle);
+				}).slice(0, site.VAR_AUTO_LOAD_ON_SCROLL).forEach(site.Handlers.loadArticle);
 			
 		},
 		

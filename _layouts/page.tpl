@@ -86,6 +86,7 @@ site.URL_DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta
 site.VAR_SITE_NAME = '{{ site.name }}';
 site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
 site.TPL_SEARCH_TITLE = '#{0} / 搜索：#{1}';
+site.VAR_AUTO_LOAD_ON_SCROLL = {{ site.custom.scrollingLoadCount }};
 </script>
 </body>
 </html>
