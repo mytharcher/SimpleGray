@@ -1,0 +1,26 @@
+.reveal h1 { font-size: 3.2em; }
+
+.reveal p {
+	margin: 0.5em 0;
+}
+
+.reveal li {
+	margin: 0.2em 0;
+}
+
+body {
+	font-family: "Liberation Mono", Consolas, Courier, monospace;
+}
+.reveal code {
+	font-family: "Liberation Mono", Consolas, Courier, monospace;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	margin: 0.5em 0 1em 0;
+	font-family: inherit;
+}
