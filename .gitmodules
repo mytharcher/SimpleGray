@@ -1,3 +1,3 @@
 [submodule "lib/reveal.js"]
 	path = lib/reveal.js
-	url = git://github.com/mytharcher/reveal.js.git
+	url = https://github.com/hakimel/reveal.js.git
