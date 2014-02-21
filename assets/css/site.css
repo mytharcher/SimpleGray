@@ -96,7 +96,7 @@ article .gist .gist-file .gist-meta{padding:0 .5em;}
 article .gist,
 article .gist pre{line-height: normal;}
 article .gist th,
-article .gist td{font-size: 100%;}
+article .gist td{font-size: 100%; border: 0;}
 article .gist .line_numbers{font-size: 85%;}
 article .gist .line-data{min-width: 100%;}
 
