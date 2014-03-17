@@ -74,7 +74,7 @@ article h6,
 article p{margin:.8em 0;}
 article h1{font-size:1.6em;}
 article h2{font-size:1.4em;}
-article p{}
+article p img{max-width: 100%;}
 article ul,
 article ol{padding-left:2em;}
 article dl{margin:.5em .8em;}
