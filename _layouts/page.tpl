@@ -74,7 +74,7 @@
 	</div>
 </aside>
 
-<script src="http://cdn.elfjs.com/code/elf-0.4.1-min.js"></script>
+<script src="http://cdn.elfjs.com/code/elf-0.5.0.min.js"></script>
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 
 <script src="/assets/js/site.js"></script>
