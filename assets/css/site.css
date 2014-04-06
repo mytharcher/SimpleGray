@@ -40,7 +40,7 @@ header .additional{font-size:90%; color:#ccc;}
 
 aside{background:#eee; font-size:75%;}
 aside h2{margin:1em 0;}
-aside .feed-link{margin-left:0.5em;}
+aside .feed-link{margin-left:0.5em; color: #d81;}
 aside nav ul{list-style:none; line-height:1.5em;}
 aside nav li:before{content:"> "; font:normal 80%/1em "宋体"; margin:0 .3em; color: #999;}
 aside .block{max-width:300px; margin:1.5em 0; line-height:1.5em;}
