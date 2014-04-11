@@ -5,17 +5,19 @@ Jekyll主题: SimpleGray
 
 利用这个模板可以帮助你在GitHub上快速的搭建一个极简风格的博客站点。
 
-## 如何使用
+![SimpleGray](http://mbed.qiniudn.com/yanjunyi.com/img/works/SimpleGray.jpg)
 
-### 开始之前
+## 如何使用 ##
+
+### 开始之前 ###
 
 首先请确保你已经了解[GitHub Pages](http://pages.github.com/)和[jekyll](github.com/mojombo/jekyll)是如何使用的（推荐阅读：[Publishing a Blog with GitHub Pages and Jekyll](http://blog.envylabs.com/2009/08/publishing-a-blog-with-github-pages-and-jekyll/)和[Jekyll-Bootstrap](http://jekyllbootstrap.com/)，扩展了解：[Octopress](http://octopress.org/)）。
 
-### 获得源代码
+### 获得源代码 ###
 
 直接clone这个仓库到本地：
 
-	$ clone git://github.com/mytharcher/SimpleGray.git your-repo-name
+	$ git clone --recursive git://github.com/mytharcher/SimpleGray.git your-repo-name
 
 **注意！**
 
@@ -23,7 +25,7 @@ Jekyll主题: SimpleGray
 
 所以更推荐你使用clone的方式创建自己的站点，以免给所有使用此主题的人造成干扰。
 
-### 修改站点信息
+### 修改站点信息 ###
 
 要将这个主题修改为自己的站点，有更多的工作要做。一部分变量可以直接在`_config.yml`里配置。这里列了一个清单，可以按此步骤进行修改。
 
@@ -67,7 +69,11 @@ Jekyll主题: SimpleGray
 
 	按照jekyll官方的说明，使用你自己的域名替换`CNAME`文件中的内容，如果有多个别名，每行一个。
 
-### JavaScript相关扩展功能
+### 基于Reveal.js的PPT模板 ###
+
+SimpleGray默认引入了[Reveal.js](http://lab.hakim.se/reveal-js/)作为演示页面的展示引擎。在任意一篇博客中把`layout`变量设置为`presentation`（即使用演示模板）就可以将文章页转化为一个PPT浏览。具体语法请参照Reveal.js主页中的说明。
+
+### JavaScript相关扩展功能 ###
 
 这个主题使用了作者[造轮子工程师][]开发的[elf+js][]，这是一个和jQuery一样简单的JS基础库，详细的请点击链接进入官网了解。
 
