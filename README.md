@@ -96,7 +96,7 @@ SimpleGray默认引入了[Reveal.js](http://lab.hakim.se/reveal-js/)作为演示
 如果你也使用了这个主题，可以项目[wiki](https://github.com/mytharcher/SimpleGray/wiki)里添加你的站点链接。
 
 [Disqus]: http://www.disqus.com/
-[elf+js]: http://elfjs.com/
+[elf+js]: http://elf.js.org/
 [Google Analytics]: http://www.google.com/analytics/
 [Google Custom Search]: http://www.google.com/cse/
 [Gravatar]: http://gravatar.com/
