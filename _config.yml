@@ -1,5 +1,3 @@
-markdown: kramdown
-highlighter: pygments
 safe: false
 permalink: /posts/:title.html
 exclude:
