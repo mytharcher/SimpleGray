@@ -1,12 +1,12 @@
 markdown: kramdown
-pygments: true
+highlighter: pygments
 safe: false
 permalink: /posts/:title.html
 exclude:
   - README.md
 
-name: Your Site Name
-host: yourdomain.com
+name: Your Name's Site
+host: localhost
 desc: Some description of your site.
 
 custom:
