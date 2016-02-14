@@ -1,7 +1,7 @@
 ---
 layout: page
 
-pageClass: page-type-post
+class: page-type-post
 
 ---
 
